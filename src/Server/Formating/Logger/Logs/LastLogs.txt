@@ -1,15 +1,3 @@
 Window of server has been connected
 Server has been started
-user1 (111578597) has been connected
-user1 (111578597) : 
-user1 (111578597) : eeeeee
-user1 (111578597) : eeeeee
-user1 (111578597) : eeeeee
-user1 (111578597) : eeeeee
-user1 (111578597) : eeeeee
-user2 (111578598) has been connected
-user2 (111578598) has been disconnected
-user3 (111578599) has been connected
-user1 (111578597) has been disconnected
-user3 (111578599) has been disconnected
 Server has been stop

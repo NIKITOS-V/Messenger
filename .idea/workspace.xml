@@ -4,32 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bad8102b-871c-40c8-b76b-bf138d46340b" name="Changes" comment="Rename project">
-      <change afterPath="$PROJECT_DIR$/src/Client/Window/ClientWindowView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/AdminConnectDriver/AdminCD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/AdminConnectDriver/ToAdminCD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/AdminConnectDriver/ToServerCD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Formating/Logger/Logs/LastLogs.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/Window/AdminWindowView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Simulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Errors/ConnectError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Errors/ConnectError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Formating/ConnectedUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Formating/ConnectedUserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Formating/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Formating/Logger/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Formating/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/Formating/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Formating/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/Formating/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Logs/lastLogs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Server/ManagedServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Server/ManagedServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Server/ReceivingServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Server/ReceivingServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presenter/ConnectDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/ClientConnectDriver/ClientCD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presenter/ToClientConnectDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/ClientConnectDriver/ToClientCD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presenter/ToServerConnectDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/ClientConnectDriver/ToServerCD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/ClientWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/Window/ClientWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/ServerWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Window/AdminWindow.java" afterDir="false" />
+    <list default="true" id="bad8102b-871c-40c8-b76b-bf138d46340b" name="Changes" comment="Изменил расположение файлов и директорий. Создал ConnectDriver для админа сервера. Написан класс Simulator, целью которого является имитировать работу данного приложения, будто это настоящий мессенджер">
+      <change beforePath="$PROJECT_DIR$/src/Server/Formating/Logger/Logs/LastLogs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Formating/Logger/Logs/LastLogs.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,12 +88,21 @@
       <option name="project" value="LOCAL" />
       <updated>1730297566050</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Изменил расположение файлов и директорий. Создал ConnectDriver для админа сервера. Написан класс Simulator, целью которого является имитировать работу данного приложения, будто это настоящий мессенджер">
+      <option name="closed" value="true" />
+      <created>1730455374181</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730455374182</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FIRST commit" />
     <MESSAGE value="Rename project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename project" />
+    <MESSAGE value="Изменил расположение файлов и директорий. Создал ConnectDriver для админа сервера. Написан класс Simulator, целью которого является имитировать работу данного приложения, будто это настоящий мессенджер" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменил расположение файлов и директорий. Создал ConnectDriver для админа сервера. Написан класс Simulator, целью которого является имитировать работу данного приложения, будто это настоящий мессенджер" />
   </component>
 </project>

@@ -40,8 +40,8 @@ public class Server implements ReceivingServer, ManagedServer {
     private final ArrayList<ConnectedUserData> connectedClients;
     private boolean serverIsRunning;
 
-    public Server(){
-        this.logger = new Logger();
+    public Server(Logger logger){
+        this.logger = logger;
         this.chatHistory = new ArrayList<>();
         this.database = new Database();
         this.connectedClients = new ArrayList<>();

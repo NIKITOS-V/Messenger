@@ -1,6 +1,7 @@
 import Client.ClientConnectDriver.ClientCD;
 import Client.Window.ClientWindow;
 import Server.AdminConnectDriver.AdminCD;
+import Server.Formating.Logger.FileHandler;
 import Server.Server.Server;
 import Server.Window.AdminWindow;
 
@@ -26,7 +27,9 @@ public class Simulator extends JFrame {
     public Simulator(){
         this.createClientWindowButton = new JButton();
 
-        this.server = new Server();
+        this.server = new Server(
+                new FileHandler()
+        );
 
         createWindow();
         createButton();
