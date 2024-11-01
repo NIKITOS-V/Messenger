@@ -1,9 +1,9 @@
-package Presenter;
+package Client.ClientConnectDriver;
 
-import Model.Errors.ConnectError;
-import Model.Formating.UserData;
+import Common.Errors.ConnectError;
+import Client.Formating.UserData;
 
-public interface ToServerConnectDriver {
+public interface ToServerCD {
     void connect(UserData userData) throws ConnectError;
     void sendMessageToServer(String text) throws ConnectError;
     void disconnected();

@@ -1,6 +1,6 @@
-package View;
+package Server.Window;
 
-import Model.Server.ManagedServer;
+import Server.AdminConnectDriver.ToServerCD;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,8 +8,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 
-public class ServerWindow extends JFrame{
-    private ManagedServer server;
+public class AdminWindow extends JFrame implements AdminWindowView {
+    private ToServerCD serverCD;
 
     private static final int WIDTH = 400;
     private static final int HEIGHT = 400;
@@ -25,9 +25,7 @@ public class ServerWindow extends JFrame{
 
     private int numberLine;
 
-    public ServerWindow(ManagedServer server){
-        this.server = server;
-
+    public AdminWindow(){
         this.controlPanel = new JPanel();
         this.startServerButton = new JButton();
         this.stopServerButton = new JButton();
@@ -124,11 +122,11 @@ public class ServerWindow extends JFrame{
     }
 
     private void startServer(){
-        this.server.startServer();
+        this.serverCD.startServer();
     }
 
     private void stopServer(){
-        this.server.stopServer();
+        this.serverCD.stopServer();
     }
 
     public void acceptLog(String log){
@@ -143,9 +141,14 @@ public class ServerWindow extends JFrame{
     }
 
     @Override
+    public void setServerCD(ToServerCD serverCD) {
+        this.serverCD = serverCD;
+    }
+
+    @Override
     protected void processWindowEvent(WindowEvent e) {
         if (e.getID() == WindowEvent.WINDOW_CLOSING){
-            this.server.stopServer();
+            this.serverCD.stopServer();
         }
 
         super.processWindowEvent(e);

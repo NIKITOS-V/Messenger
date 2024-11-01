@@ -1,17 +1,17 @@
-package Model.Formating;
+package Server.Formating;
 
-import Presenter.ToClientConnectDriver;
+import Client.ClientConnectDriver.ToClientCD;
 
 public class ConnectedUserData {
     private final String userName;
-    private final ToClientConnectDriver connectDriver;
+    private final ToClientCD connectDriver;
 
-    public ConnectedUserData(String userName, ToClientConnectDriver connectDriver){
+    public ConnectedUserData(String userName, ToClientCD connectDriver){
         this.connectDriver = connectDriver;
         this.userName = userName;
     }
 
-    public ToClientConnectDriver getConnectDriver() {
+    public ToClientCD getConnectDriver() {
         return connectDriver;
     }
 

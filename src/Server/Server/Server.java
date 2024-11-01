@@ -1,47 +1,53 @@
-package Model.Server;
+package Server.Server;
 
-import Model.Errors.ConnectError;
-import Model.Formating.ConnectedUserData;
-import Model.Formating.Logger;
-import Model.Formating.UserData;
-import Model.Formating.Message;
-import Presenter.ToClientConnectDriver;
-import View.ServerWindow;
+import Common.Errors.ConnectError;
+import Server.AdminConnectDriver.ToAdminCD;
+import Server.Formating.ConnectedUserData;
+import Server.Formating.Logger.Logger;
+import Client.Formating.UserData;
+import Client.Formating.Message;
+import Client.ClientConnectDriver.ToClientCD;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
+class Database{
+    public final ArrayList<UserData> database;
+
+    public Database(){
+        this.database = new ArrayList<>(List.of(
+                new UserData("user1", "password1"),
+                new UserData("user2", "password2"),
+                new UserData("user3", "password3"),
+                new UserData("user4", "password4"),
+                new UserData("user5", "password5")
+        ));
+    }
+
+    public boolean contains(UserData userData){
+        return this.database.contains(userData);
+    }
+}
+
 public class Server implements ReceivingServer, ManagedServer {
-    private ServerWindow serverWindow;
+    private ToAdminCD adminCD;
 
     private final ArrayList<Message> chatHistory;
     private final Logger logger;
+    private final Database database;
 
-    private final ArrayList<UserData> dataBase;
     private final ArrayList<ConnectedUserData> connectedClients;
     private boolean serverIsRunning;
 
     public Server(){
         this.logger = new Logger();
         this.chatHistory = new ArrayList<>();
-        this.dataBase = new ArrayList<>();
+        this.database = new Database();
         this.connectedClients = new ArrayList<>();
-
-        fillDatabase();
 
         this.serverIsRunning = false;
     }
-
-    private void fillDatabase(){
-        this.dataBase.add(
-                new UserData("Lilia Cornaval", "Kirill2012")
-        );
-
-        this.dataBase.add(
-                new UserData("Nikolay Cornaval", "180@alfa")
-        );
-    }
-
     @Override
     public boolean isRunning(){
         return this.serverIsRunning;
@@ -80,8 +86,8 @@ public class Server implements ReceivingServer, ManagedServer {
     }
 
     @Override
-    public void connectClient(UserData userData, ToClientConnectDriver connectDriver) throws ConnectError {
-        if (!this.dataBase.contains(userData)){
+    public void connectClient(UserData userData, ToClientCD connectDriver) throws ConnectError {
+        if (!this.database.contains(userData)){
             throw new ConnectError("Uncorrected user`s name or password");
         }
 
@@ -142,24 +148,19 @@ public class Server implements ReceivingServer, ManagedServer {
     }
 
     private void sendLastLog(){
-        if (this.serverWindow != null){
-            this.serverWindow.acceptLog(
+        if (this.adminCD != null){
+            this.adminCD.acceptLog(
                     this.logger.getLastLog()
             );
         }
     }
 
-    public void createSeverWindow(){
-        this.serverWindow = new ServerWindow(this);
+    public void setAdminCD(ToAdminCD admin){
+        this.adminCD = admin;
 
-        this.logger.addAnotherLog("Window of server has been created");
+        this.logger.addAnotherLog("Window of server has been connected");
 
         sendLastLog();
-    }
-
-    @Override
-    public String getLog() {
-        return this.logger.getLastLog();
     }
 
     @Override

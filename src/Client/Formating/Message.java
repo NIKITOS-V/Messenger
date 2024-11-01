@@ -1,4 +1,4 @@
-package Model.Formating;
+package Client.Formating;
 
 public class Message {
     private final String text;

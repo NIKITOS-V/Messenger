@@ -1,21 +1,21 @@
-package Presenter;
+package Client.ClientConnectDriver;
 
-import Model.Errors.ConnectError;
-import Model.Formating.Message;
-import Model.Server.ReceivingServer;
-import Model.Formating.UserData;
-import View.Client;
+import Common.Errors.ConnectError;
+import Client.Formating.Message;
+import Server.Server.ReceivingServer;
+import Client.Formating.UserData;
+import Client.Window.ClientWindowView;
 
-public class ConnectDriver implements ToClientConnectDriver, ToServerConnectDriver {
+public class ClientCD implements ToClientCD, ToServerCD {
     private final ReceivingServer server;
-    private final Client client;
+    private final ClientWindowView clientWindowView;
     private int registryID = -1;
 
-    public ConnectDriver(Client client, ReceivingServer server){
+    public ClientCD(ClientWindowView clientWindowView, ReceivingServer server){
         this.server = server;
-        this.client = client;
+        this.clientWindowView = clientWindowView;
 
-        this.client.setConnectDriver(this);
+        this.clientWindowView.setConnectDriver(this);
     }
 
     @Override
@@ -32,7 +32,7 @@ public class ConnectDriver implements ToClientConnectDriver, ToServerConnectDriv
 
     @Override
     public void sendMessageToClient(Message message){
-        this.client.AcceptMessage(message);
+        this.clientWindowView.AcceptMessage(message);
     }
 
     @Override

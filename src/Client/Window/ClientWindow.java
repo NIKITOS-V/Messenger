@@ -1,9 +1,9 @@
-package View;
+package Client.Window;
 
-import Model.Errors.ConnectError;
-import Model.Formating.UserData;
-import Presenter.ToServerConnectDriver;
-import Model.Formating.Message;
+import Common.Errors.ConnectError;
+import Client.Formating.UserData;
+import Client.ClientConnectDriver.ToServerCD;
+import Client.Formating.Message;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,8 +12,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.io.IOException;
 
-public class ClientWindow extends JFrame implements Client {
-    private ToServerConnectDriver connectDriver;
+public class ClientWindow extends JFrame implements ClientWindowView {
+    private ToServerCD connectDriver;
 
     private static final int WIDTH = 700;
     private static final int HEIGHT = 400;
@@ -269,7 +269,7 @@ public class ClientWindow extends JFrame implements Client {
     }
 
     @Override
-    public void setConnectDriver(ToServerConnectDriver connectDriver) {
+    public void setConnectDriver(ToServerCD connectDriver) {
         this.connectDriver = connectDriver;
     }
 }

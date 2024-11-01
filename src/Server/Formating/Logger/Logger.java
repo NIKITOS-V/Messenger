@@ -1,11 +1,13 @@
-package Model.Formating;
+package Server.Formating.Logger;
+
+import Client.Formating.Message;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
 public class Logger {
-    private final String PATH = "src/Model/Logs/LastLogs.txt";
+    private final String PATH = "src/Server/Formating/Logger/Logs/LastLogs.txt";
     private final ArrayList<String> logHistory;
 
     public Logger(){

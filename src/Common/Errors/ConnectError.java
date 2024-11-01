@@ -1,4 +1,4 @@
-package Model.Errors;
+package Common.Errors;
 
 import java.io.IOException;
 

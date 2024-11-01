@@ -1,8 +1,8 @@
-package Presenter;
+package Client.ClientConnectDriver;
 
-import Model.Formating.Message;
+import Client.Formating.Message;
 
-public interface ToClientConnectDriver {
+public interface ToClientCD {
     void sendMessageToClient(Message message);
     void setRegistryID(int registryID);
     int getRegistryID();

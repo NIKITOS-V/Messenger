@@ -4,31 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bad8102b-871c-40c8-b76b-bf138d46340b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Messager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Errors/ConnectError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Formating/ConnectedUserData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Formating/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Formating/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Formating/UserData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Logs/lastLogs.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Server/ManagedServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Server/ReceivingServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Presenter/ConnectDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Presenter/ToClientConnectDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Presenter/ToServerConnectDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/ClientWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/ServerWindow.java" afterDir="false" />
+    <list default="true" id="bad8102b-871c-40c8-b76b-bf138d46340b" name="Changes" comment="Rename project">
+      <change afterPath="$PROJECT_DIR$/src/Client/Window/ClientWindowView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/AdminConnectDriver/AdminCD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/AdminConnectDriver/ToAdminCD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/AdminConnectDriver/ToServerCD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Formating/Logger/Logs/LastLogs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server/Window/AdminWindowView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Simulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Errors/ConnectError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Errors/ConnectError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Formating/ConnectedUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Formating/ConnectedUserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Formating/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Formating/Logger/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Formating/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/Formating/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Formating/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/Formating/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Logs/lastLogs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Server/ManagedServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Server/ManagedServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Server/ReceivingServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Server/ReceivingServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presenter/ConnectDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/ClientConnectDriver/ClientCD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presenter/ToClientConnectDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/ClientConnectDriver/ToClientCD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presenter/ToServerConnectDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/ClientConnectDriver/ToServerCD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/ClientWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/Window/ClientWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/ServerWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Window/AdminWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,10 +68,15 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Client" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Messager" />
+      <module name="Messenger" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,6 +96,28 @@
       <option name="presentableId" value="Default" />
       <updated>1730196719531</updated>
     </task>
+    <task id="LOCAL-00001" summary="FIRST commit">
+      <option name="closed" value="true" />
+      <created>1730297426786</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730297426786</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Rename project">
+      <option name="closed" value="true" />
+      <created>1730297566050</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730297566050</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FIRST commit" />
+    <MESSAGE value="Rename project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename project" />
   </component>
 </project>

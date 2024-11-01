@@ -1,4 +1,4 @@
-package Model.Formating;
+package Client.Formating;
 
 import java.util.Objects;
 
